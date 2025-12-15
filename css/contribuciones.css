@@ -1,0 +1,132 @@
+:root {
+    /* Variables para facilitar la gestión de tamaños y espaciado */
+    --card-gap: 1px;
+    --card-width-desktop: calc((100% - (2 * var(--card-gap))) / 4); /* Para 3 tarjetas */
+    --card-width-mobile: 100%; /* Para 1 tarjeta */
+    --transition-duration: 0.5s;
+    --base-card-height: 250px; /* Alto base para las tarjetas */
+}
+
+.contribuciones_container {
+    width: 90%;
+    height: 40vh;
+}
+
+.contribuciones_title h2 {
+    text-align: center;
+    color: var(--rojo-primario);
+}
+/* 1. Estilos del Carrusel Principal (Bloque) */
+.slider {
+    /* 80% de ancho máximo de la pantalla */
+    margin: 0 auto;
+    position: relative;
+    display: flex;
+    align-items: start; /* Alineación vertical de flechas con el viewport */
+    padding: 0 40px; /* Espacio para que las flechas queden fuera del viewport */
+}
+
+/* 2. Estilos del Viewport */
+.slider_viewport {
+    flex-grow: 1; /* Ocupa el espacio restante */
+    overflow: hidden; /* Esto es clave para ocultar las tarjetas que no están en vista */
+}
+
+/* 3. Estilos del Contenedor de Desplazamiento */
+.slider_container {
+    display: flex;
+    transition: transform var(--transition-duration) ease-in-out; /* Movimiento suave */
+}
+
+/* 4. Estilos de las Tarjetas (Elementos) */
+.slider_item {
+    /* Mantiene el alto basado en el contenido, con un alto mínimo */
+    min-height: max-content;
+    flex-shrink: 0; /* Evita que las tarjetas se encojan */
+    /* El ancho inicial es para 3 tarjetas, se ajusta con JS y media queries */
+    width: var(--card-width-desktop); 
+    margin: 20px 0;
+    margin-right: var(--card-gap);
+    background-color: #ffffff; 
+    border-radius: 8px;
+    padding: 15px;
+    box-sizing: border-box;
+    text-align: left;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 10px;
+    opacity: 1;
+    transition: none;
+}
+
+
+
+/* Estilo para simular contenido dinámico */
+.slider_item-content {
+    flex-grow: 1;
+    background-color: #f0f0f0;
+    border-radius: 4px;
+}
+
+
+/* 5. Estilos de los Botones de Navegación */
+.slider_button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+    z-index: 10;
+    color: #007bff; /* Color de las flechas */
+    position: absolute; /* Para posicionar junto al viewport */
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.slider_button  {
+    font-size: 30px;
+}
+
+.slider_button-prev {
+    left: 0;
+}
+
+.slider_button-next {
+    right: 0;
+}
+
+/* 6. Media Query: Mobile (Máximo 768px) */
+/* Mostrar SOLO 1 tarjeta en simultáneo */
+@media (max-width: 768px) {
+    
+    .slider {
+        max-width: 95%; /* Más ancho en mobile */
+        padding: 0 30px; /* Reducir padding de flechas */
+    }
+
+    /* Redefinición del ancho de la tarjeta para mobile */
+    .slider_item {
+        width: var(--card-width-mobile); 
+        margin-right: 0; /* No hay margen entre tarjetas visibles, solo en el contendor */
+    }
+
+    /* Ajuste del margen para el contenedor en mobile. El margen real lo maneja JS */
+    .slider_container {
+        /* Se usa para asegurar que la vista sea fluida */
+        margin-right: var(--card-gap); 
+    }
+}
+
+.slider_img {
+    display: flex;
+    width: 100px;
+    height: 100px;
+    justify-content: center;
+    align-items: center;
+}
+
+.slider_item img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}

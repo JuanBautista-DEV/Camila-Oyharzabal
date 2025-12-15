@@ -1,0 +1,203 @@
+:root {
+    /* Variables para facilitar la gestión de tamaños y espaciado */
+    --card-gap: 20px;
+    --card-width-desktop: calc((100% - (2 * var(--card-gap))) / 3); /* Para 3 tarjetas */
+    --card-width-mobile: 100%; /* Para 1 tarjeta */
+    --transition-duration: 0.5s;
+    --base-card-height: 250px; /* Alto base para las tarjetas */
+}
+
+.testimonios_container {
+    width: 90%;
+    min-height: 60vh;
+    padding-top: 5rem;
+}
+
+
+.testimonios_title h2 {
+    text-align: center;
+    margin: 0 ;
+    color: var(--rojo-primario);
+}
+
+/* 1. Estilos del Carrusel Principal (Bloque) */
+.carousel {
+    /* 80% de ancho máximo de la pantalla */
+    margin: 0 auto;
+    position: relative;
+    display: flex;
+    align-items: center; /* Alineación vertical de flechas con el viewport */
+    padding: 0 40px; /* Espacio para que las flechas queden fuera del viewport */
+}
+
+/* 2. Estilos del Viewport */
+.carousel_viewport {
+    flex-grow: 1; /* Ocupa el espacio restante */
+    overflow: hidden; /* Esto es clave para ocultar las tarjetas que no están en vista */
+}
+
+/* 3. Estilos del Contenedor de Desplazamiento */
+.carousel_container {
+    display: flex;
+    transition: transform var(--transition-duration) ease-in-out; /* Movimiento suave */
+}
+
+/* 4. Estilos de las Tarjetas (Elementos) */
+.carousel_item {
+    /* Mantiene el alto basado en el contenido, con un alto mínimo */
+    min-height: max-content;
+    flex-shrink: 0; /* Evita que las tarjetas se encojan */
+    /* El ancho inicial es para 3 tarjetas, se ajusta con JS y media queries */
+    width: var(--card-width-desktop); 
+    margin: 20px 0;
+    margin-right: var(--card-gap);
+    background-color: #ffffff; 
+    border-radius: 8px;
+    border: 1px solid #e7292922;
+    box-shadow: 0 4px 18px rgba(172, 13, 13, 0.1);
+    padding: 15px;
+    box-sizing: border-box;
+    text-align: left;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 10px;
+    /* TARJETAS PEQUEÑAS */
+    transform: scale(1); /* Escala base más pequeña */
+    opacity: 0;
+}
+
+.testimonios_container .is-adjacent {
+    opacity: .2;
+    scale: .9;
+    transition: 
+        transform var(--transition-duration) ease-in-out, 
+        opacity var(--transition-duration) ease-in-out; 
+}
+
+.testimonios_container .is-active {
+    opacity: 1;
+    transition: 
+        transform var(--transition-duration) ease-in-out, 
+        opacity var(--transition-duration) ease-in-out; 
+}
+
+/* Estilo para simular contenido dinámico */
+.carousel_item-content {
+    flex-grow: 1;
+    background-color: #f0f0f0;
+    border-radius: 4px;
+}
+
+
+/* 5. Estilos de los Botones de Navegación */
+.carousel_button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+    z-index: 10;
+    color: var(--color-angular); /* Color de las flechas */
+    position: absolute; /* Para posicionar junto al viewport */
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.carousel_button  {
+    font-size: 30px;
+}
+
+.carousel_button--prev {
+    left: 0;
+}
+
+.carousel_button--next {
+    right: 0;
+}
+
+/* 6. Media Query: Mobile (Máximo 768px) */
+/* Mostrar SOLO 1 tarjeta en simultáneo */
+@media (max-width: 768px) {
+    
+    .carousel {
+        max-width: 95%; /* Más ancho en mobile */
+        padding: 0 30px; /* Reducir padding de flechas */
+    }
+
+    /* Redefinición del ancho de la tarjeta para mobile */
+    .carousel_item {
+        width: var(--card-width-mobile); 
+        margin-right: 0; /* No hay margen entre tarjetas visibles, solo en el contendor */
+    }
+
+    /* Ajuste del margen para el contenedor en mobile. El margen real lo maneja JS */
+    .carousel_container {
+        /* Se usa para asegurar que la vista sea fluida */
+        margin-right: var(--card-gap); 
+    }
+}
+
+
+
+
+.carousel_item img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: rgb(248, 155, 155);
+}
+
+.carousel_item h2, .carousel_item h3, .carousel_item p {
+    font-family: "roboto";
+    font-weight: 100;
+    color: #010101;
+}
+
+.carousel_item h2 {
+    font-size: 20px;
+    font-weight: 400;
+}
+.carousel_item h3 {
+    font-size: 18px;
+    margin-top: 4px;
+    font-weight: 200;
+}
+.carousel_item p {
+    margin-top: 5px;
+    font-size: 16px;
+}
+
+/* Estado por defecto: recortado */
+.clampado {
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    transition: all .3s ease;
+}
+
+/* Botón */
+.btn-vermas {
+    background: none;
+    border: none;
+    color: #dd1d16;
+    font-weight: 500;
+    cursor: pointer;
+    padding: 0;
+    margin-top: 8px;
+    font-family: inherit;
+    font-size: .9rem;
+    text-decoration: underline;
+    font-family: "roboto", "montserrat", sans-serif;
+}
+.carousle_link {
+    display: flex;
+    flex-direction: row;
+    justify-content: right;
+}
+
+.carousle_link svg {
+    width: 30px;
+    height: 30px;
+    fill: var(--rojo-primario);
+}
+

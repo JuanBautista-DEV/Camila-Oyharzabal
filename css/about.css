@@ -1,0 +1,79 @@
+#sobremi {
+    margin-top: calc(-4rem - (-4px));
+    background-image: url(../img/fondo-about-2.png);
+    background-size:cover;
+    background-position: center;
+    background-repeat:no-repeat;
+    min-height: 100vh;
+    width: 100vw;
+    padding: 5rem 0 0 0;
+    display: flex;
+    align-items: center;
+}
+
+.about_grid {
+    display: grid;
+    grid-template-columns: 30% 1fr;
+    grid-template-areas: 
+        "about timelines"
+        "about timelines";
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+}
+
+.about_container {
+    grid-area: about;
+}
+
+.aside_container {
+    grid-area: timelines;
+}
+
+.about_container {
+    width: 100%;
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    overflow: hidden;
+}
+
+.about_text p {
+    font-family: "montserrat";
+    font-weight: 200;
+    font-size: 60px;
+    padding: 10px;
+    color: #fff;
+}
+
+.about_links {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+    gap: 15px;
+}
+
+.about_links svg {
+    width: 50px;
+    height: 50px;
+    transition: all .3s ease-in-out;
+}
+
+@media screen and (max-width: 768px) {
+    .about_grid {
+        grid-template-areas: 
+        "timelines timelines"
+        "timelines timelines"
+        ;
+    }
+
+    .about_container {
+        display: none;
+    }
+
+}

@@ -1,0 +1,81 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+html {
+    overflow-x: visible;
+}
+
+body {
+    overflow-x: hidden;
+}
+
+/* PALETA DE COLORES PARA EL PROYECTO */
+:root {
+    --rojo-primario: #dd1b16;
+    --rojo-hover: #bb1512;
+    --rojo-footer: #d75050;
+    --rosa-form: #f06b6b;
+    --blanco-texto: #fff;
+    --blanco-opaco: #ffffffad;
+    --timelines-box: #dd1d1674;
+    --color-icons: #888;
+    --color-sm: #111;
+    --color-btn: #bc0505;
+    --color-btn-hover: #2fee7e;
+}
+
+h1 {
+    color: var(--color-titulos);
+}
+
+h2 {
+    color: var(--color-subtitulos);
+    font-family: "roboto";
+    font-weight: 200;
+    font-size: 26px;
+    text-transform: uppercase;
+}
+
+h3 {
+    color: var(--color-subtitulos-2);
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    color: var(--color-btn);
+    text-decoration: none;
+    font-family: "roboto", "montserrat", sans-serif;
+    font-weight: 300;
+    text-transform: uppercase;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.cta_btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cta_btn a {
+    color: var(--color-angular);
+    border: 1px solid var(--color-angular);
+    border-radius: 12px;
+    padding: 10px 20px;
+    font-size: 18px;
+    transition: all .3s ease-in-out;
+}
+
+.cta_btn a:hover {
+    background-color: var(--color-angular);
+    color: #ffffff;
+}
+

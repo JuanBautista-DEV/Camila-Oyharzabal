@@ -1,0 +1,49 @@
+:root {
+    --color-facebook: #1877f2;
+    --color-instagram: #e4405f;
+    --color-twitter: #1da1f2;
+    --color-x: #000;
+    --color-behance: #0057ff;
+    --color-whatsapp: #25d366;
+    --color-mail: #ea4335;
+    --color-linkedin: #0a66c2;
+    --color-discord: #5865f2;
+    --color-youtube: #FF0000;
+    --color-telegram: #26A5E4;
+    --color-tiktok-black: #010101;
+    --color-tiktok-cyan: #69C9D0;
+    --color-tiktok-pink: #EE1D52;
+    --color-meta: #0866FF;
+    --color-messenger: #00B2FF;
+    --color-html5: #e44d26;
+    --color-css3: #1572b6;
+    --color-js: #f7df1e;
+    --color-react: #61dafb;
+    --color-vue: #42b883;
+    --color-angular: #dd1b16;
+    --color-bootstrap: #7952b3;
+    --color-tailwind: #38bdf8;
+    --color-git: #F05032;
+    --color-github: #181717;
+    --color-python: #3776AB;/*azul*/
+    --color-python2: #FFD43B;/*amarillo*/
+    --color-django: #092E20;
+    --color-jquery: #0769AD;
+    --color-wordpress: #21759B;
+    --color-vscode: #007ACC;
+    --color-nodejs: #339933;
+
+    --color-arrow: #444;
+    --color-menu: #444;
+    --color-close: #ff5555;
+    --color-check: #4caf50;
+    --color-link: #2196f3;
+    
+    --color-business: #008cff;
+    --color-store: #3f51b5;
+    --color-photo: #009688;
+    --color-arch: #607d8b;
+}
+
+
+

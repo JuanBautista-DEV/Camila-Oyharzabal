@@ -1,0 +1,281 @@
+#contacto, footer {
+    width: 100%;
+    background-color: #d75050;
+}
+
+#contacto {
+    padding: 5rem 0 0 0;
+    height: 90vh;
+}
+
+.contacto_grid {
+    display: grid;
+    grid-template-columns: 60% 40%;
+    grid-template-rows: 60% 40%;
+    grid-template-areas: 
+        "form mapa"
+        "form consulta";
+    width: 80%;
+    height: 100%;
+    margin: 0 auto;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.contacto_form {
+    grid-area: form;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    gap: 20px;
+}
+
+.contacto_directo {
+    grid-area: consulta;
+}
+
+.ubicacion {
+    grid-area: mapa;
+    overflow: hidden;
+    height: 100%;
+}
+
+/* =========================
+   TEXTOS
+========================= */
+
+#contacto h2 {
+    color: #fff;
+}
+
+#contacto p {
+    color: #d4d1d1;
+    font-size: 15.7px;
+    font-family: "montserrat";
+}
+
+#contacto a {
+    color: #fff;
+}
+
+/* =========================
+   FORMULARIO
+========================= */
+
+.form_container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 40px 20px;
+}
+
+.form_container input,
+.form_container textarea {
+    width: 40%;
+    height: 50px;
+    background: none;
+    border: none;
+    border-bottom: 1px solid #fff;
+    border-radius: 4px;
+    color: #ffffff;
+    padding: 10px;
+    font-size: 18px;
+    font-family: "montserrat";
+    font-weight: 200;
+    transition: all .2s ease-in-out;
+}
+
+.form_container textarea {
+    width: calc(80% + 20px);
+    height: 8em;
+    resize: none;
+    font-size: 16px;
+}
+
+.form_container input:hover,
+.form_container textarea:hover {
+    background-color: #f06b6b;
+}
+
+.form_container input::placeholder,
+.form_container textarea::placeholder {
+    color: #ffffffad;
+}
+
+.form_btn {
+    width: calc(80% + 20px);
+    display: flex;
+    justify-content: center;
+}
+
+.form_btn button {
+    padding: 6px 10px;
+    font-size: 18px;
+    font-family: "roboto";
+    color: #fff;
+    background: #f06b6b;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all .3s ease-in-out;
+}
+
+.form_btn button:hover {
+    background: #fff;
+    color: #e12a2a;
+}
+
+/* =========================
+   MAPA
+========================= */
+
+.mapa_container {
+    margin-top: 20px;
+    width: 100%;
+    height: 100%;
+}
+
+.ubicacion iframe {
+    width: 100%;
+    height: 80%;
+    border-radius: 8px;
+    object-fit: cover;
+}
+
+/* =========================
+   CONTACTO DIRECTO
+========================= */
+
+.contacto_directo h2 {
+    margin-bottom: 5px;
+}
+
+.contacto_directo span {
+    color: #fff;
+}
+
+.contacto_sm {
+    display: flex;
+    flex-direction: row;
+    margin-top: 5px;
+    gap: 5px;
+    fill: #f3eeee;
+}
+
+.contacto_sm svg {
+    width: 38px;
+    height: 38px;
+    transition: all .3s ease-in-out;
+}
+
+.contacto_sm svg:hover {
+    fill: #ffffff;
+    scale: 1.2;
+}
+
+.footer_container {
+    width: 80%;
+    display: flex; 
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+    font-size: 18px;
+    color: #fff;
+    padding: 10px 0;
+    text-align: center;
+    font-family: "roboto", "montserrat", sans-serif;
+    font-weight: 100;
+}
+
+.footer_container .creador a {
+    font-size: 16px;
+    color: #fff;
+    text-decoration: underline;
+}
+
+.footer_container .creador a:hover {
+    color: #000;
+}
+
+@media (max-width: 768px) {
+
+    #contacto {
+        height: auto;
+        padding: 5rem 0;
+    }
+
+    .contacto_grid {
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+        grid-template-areas:
+            "form"
+            "mapa"
+            "consulta";
+        width: 90%;
+        height: auto;
+        gap: 40px;
+    }
+
+    /* ---------- FORM ---------- */
+
+    .form_container {
+        gap: 25px;
+    }
+
+    .form_container input,
+    .form_container textarea {
+        width: 100%;
+        font-size: 16px;
+    }
+
+    .form_container textarea {
+        height: 7em;
+    }
+
+    .form_btn {
+        width: 100%;
+    }
+
+    /* ---------- MAPA ---------- */
+
+    .ubicacion {
+        height: auto;
+    }
+
+    .mapa_container {
+        margin-top: 10px;
+        height: 250px;
+    }
+
+    .ubicacion iframe {
+        height: 100%;
+    }
+
+    /* ---------- CONTACTO DIRECTO ---------- */
+
+    .contacto_directo {
+        text-align: center;
+    }
+
+    .contacto_sm {
+        justify-content: center;
+        margin-top: 10px;
+    }
+
+    .footer_container {
+        width: 100%;
+        font-size: 14px;
+        color: #fff;
+        padding: 10px 10px;
+        text-align: center;
+    }
+
+    .footer_container .creador a {
+        font-size: .8rem;
+        color: #fff;
+        text-decoration: underline;
+    }
+}
+
