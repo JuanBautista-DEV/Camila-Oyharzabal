@@ -1,25 +1,31 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Camila Emilia Oyharzábal</title>
+    <title>Camila Emilia Oyharzábal | Consultoría Empresarial</title>
+    <meta name="description" content="Consultoría empresarial y gestión comercial. Acompaño a empresas en procesos de crecimiento, optimización de procesos y transformación estratégica.">
+    <meta property="og:title" content="Camila Emilia Oyharzábal | Consultoría Empresarial">
+    <meta property="og:description" content="Consultoría empresarial y gestión comercial. Acompaño empresas en procesos de crecimiento y transformación estratégica.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://juanbautista-dev.github.io/Camila-Oyharzabal/">
+    <meta property="og:image" content="https://jbo-dev.github.io/camila-consultoria/img/og-image.png">
     <link rel="stylesheet" href="css/styles.css">
-
     <!-- Ícono que se muestra en la pestaña -->
     <link rel="icon" type="image/png" href="img/favicon.png">
-    <!--Fuentes: Roboto, Montserrat, Merriweather, Bebas Neue, Playfair Display, Lato -->
-    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <!--Fuentes: Roboto, Montserrat, Poppins ,Fira Sans -->
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,100;0,200;0,400;0,900;1,100;1,600&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,400;0,600;0,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <!-- Efectos con AOS -->
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     
 </head>
 <body id="inicio">
 <!-- Barra superior que contiene el logo y el menú de navegación (Incluido el menú mobile)-->
+<div class="scroll_container">
     <div class="scroll-hero">    
         
 
-        <section id="hero" class="container hero_container">
+        <section id="hero" class="container hero_container scroll_section">
 
             <div id="tsparticles"></div>
 
@@ -36,17 +42,18 @@
     <header id="header" class="header">
             <div class="container header_container">
                 <div class="logo">
-                    <img src="img/favicon.png" alt="brand_logo">
+                    <img src="img/favicon.png" alt="Camila Emilia Oyharzábal - Consultoría Empresarial">
                 </div>
                 <nav class="nav_desktop">
                     <ul>
                         <li><a href="#inicio" class="active">Inicio</a></li>
                         <li><a href="#sobremi">Perfil</a></li>
                         <li><a href="#testimonios">Testimonios</a></li>
+                        <li><a href="#aliados">Aliados</a></li>
                         <li><a href="#contacto">Contacto</a></li>
                     </ul>
                 </nav>
-
+                
                 <div class="nav_mobile">
                     <input type="checkbox" id="toggle_nav" class="toggle_nav">
                     <label for="toggle_nav" class="toggle_icon icon_open"><svg><use href="assets/sprite-base.svg#icon-menu"></use></svg></label>
@@ -61,15 +68,15 @@
                             <li><a href="#contacto">Contacto</a></li>
                             <div class="nav_links">
                                 <!-- Ícono LinkedIn -->
-                                <a href="https://www.linkedin.com/in/camila-oyharz%C3%A1bal-95178ab8/" target="_blank">
+                                <a href="https://www.linkedin.com/in/camila-oyharz%C3%A1bal-95178ab8/" target="_blank" alt="LinkedIn Camila Oyharzábal">
                                     <div class="icon"><svg><use href="assets/sprite-base.svg#icon-linkedin"></use></svg></div>
                                 </a>
                                 <!-- Ícono Instagram -->
-                                <a href="https://www.instagram.com/camila_oyharzabal/" target="_blank">
+                                <a href="https://www.instagram.com/camila_oyharzabal/" target="_blank" alt="Instagram Camila Oyharzábal">
                                     <div class="icon"><svg><use href="assets/sprite-base.svg#icon-instagram"></use></svg></div>
                                 </a>    
                                 <!-- Ícono Email -->
-                                <a href="#">
+                                <a href="#" alt="Contacto por email Camila Oyharzábal">
                                     <div class="icon"><svg><use href="assets/sprite-base.svg#icon-mail-blanco"></use></svg></div>
                                 </a>        
                             </div>
@@ -79,10 +86,10 @@
 
             </div>
         </header>
-    <section id="sobremi" class="container" data-aos="fade-up">
+    <section id="sobremi" class="container scroll_section">
 <!-- Sección About - A la izquierda una línea vertical de la trayectoriacon foto más personal (horizontal mobile). A la derecha descripción de Cami y proyectos actuales. -->
             
-        <div class="about_grid">
+        <div class="about_grid" data-aos="fade-up">
             <article class="about_container">
                 <!-- <div class="about_img">
                     <img src="img/fondo-about1.png" alt="Camila Oyharzábal">
@@ -92,508 +99,649 @@
                 </div>
                 <div class="about_links">
                     <!-- Ícono LinkedIn -->
-                    <a href="https://www.linkedin.com/in/camila-oyharz%C3%A1bal-95178ab8/" target="_blank">
+                    <a href="https://www.linkedin.com/in/camila-oyharz%C3%A1bal-95178ab8/" target="_blank" alt="LinkedIn Camila Oyharzábal">
                         <div class="icon"><svg><use href="assets/sprite-base.svg#icon-linkedin"></use></svg></div>
                     </a>
                     <!-- Ícono Estudio Fresa -->
-                    <a href="https://www.instagram.com/camila_oyharzabal/" target="_blank">
+                    <a href="https://www.instagram.com/camila_oyharzabal/" target="_blank" alt="Instagram Camila Oyharzábal">
                         <div class="icon"><svg><use href="assets/sprite-base.svg#icon-instagram"></use></svg></div>
                     </a>    
                     <!-- Ícono Estudio Fresa -->
-                    <a href="#">
+                    <a href="#" alt="Contacto por email Camila Oyharzábal">
                         <div class="icon"><svg><use href="assets/sprite-base.svg#icon-mail-blanco"></use></svg></div>
                     </a>        
                 </div>
             </article>
 
-
-
-            <aside class="aside_container">
-                <!-- Timeline 1 -->
-                <div class="timeline_scale_wrapper">
-                    <div class="timeline_card">    
-                        <div class="timeline_title">
-                            <h2>Trayectoria</h2>
-                            <div class="timeline_card_text">
-                                <p>Durante más de 15 años trabajé en logística, retail y gestión comercial, liderando equipos y acompañando a organizaciones en procesos de crecimiento y transformación. Ese recorrido me permitió integrar lo operativo con lo estratégico, entender la dinámica real de las empresas y aprender a convertir diagnósticos en acciones concretas.</p>
-                            </div>
-                        </div>
-                    
-                        <div class="timeline">
-                            <div class="timeline_container">
-                                <img src="img/timelines/fresa-logo.png" alt="Estudio Fresa icon">
-                                <div class="timeline_desc">
-                                    <h3 class="Rol">Director de Proyecto</h3>
-                                    <p class="Empresa">Estudio Fresa</p>
-                                    <small class="tiempo">Mar. 2024 - Actualidad</small>
-                                    <span class="timeline_container_arrow"></span>
-                                </div>
-                            </div>
-                        
-                            <div class="timeline_container">
-                                <img src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBxIPDxAPEBAVFRAVEBAVFxUQFRYYEBUQFRcXFxUVFhUkHighGRomJxUWJT0tJTUrLi4uHyszODMuNygtLysBCgoKDQ0OGRAQGi0dFx0tNy0tLSsrKy0tLS0tLS0tNy0tLS0tLS0tLSstLC0tNy0tKy0tLS0tKy03LTcrLS0tK//AABEIAGQAZAMBIgACEQEDEQH/xAAbAAACAgMBAAAAAAAAAAAAAAACAwAFAQQHBv/EAD0QAAIBAwIDBAcFBAsAAAAAAAECAAMEERIhBTFBEyJRcQYHMmGBkaEUI1JisUJDweEWFzM0U1RykpOy0f/EABYBAQEBAAAAAAAAAAAAAAAAAAABAv/EABYRAQEBAAAAAAAAAAAAAAAAAAABEf/aAAwDAQACEQMRAD8A51pgFZslYsiZCsSYh4mMQBkmTMZgQQsQQZnMImJgiZzChS8TEbiY0wFyQ9MkDZaLMNzFOYWsEwrei9VglNC7nkqjJ+U9H6G+htXiLh3Jp2wO78mf8qe/3zp9hwulZ0WW3tChBCtneo+dg2vn8pcRz/hvq2rsA93UWihxsveqYOw25CXr+ryxpaddd21ZwWYKAAdwcCertrlTTemzf2Yy2N+71AJ3JBx85rWVdK9rUONXZtsG94zjPwMor63oJw7sQ60idjuKjDO/Mc5XXvq3tHpPVpVnp4Lc+8uAM79Z6CjcLRtNBGlmqPgHmcYzgfKTiFYC1orV1gnJzSO2DuARz6Zgc24p6v7qkpqUcV6Y/wALOsD3pznlTkHBGCOYPPM7fWrG2oBaZbtHOpx+8VTuAR5frKr0h4Fb3aB6qmlWYjRUVCDjH7we85+UiOUCTTN3jPB6tnU7OqNj7LD2HHip6zVSRQ6ZI3EkBLPLr0N9HX4jchMfcphqh/L+EHxM88SSQBzJAHmZ2z0V9FltrNabORVbv1OzIDZxsueZAlFzVuqdBGRE1U0GGVMAqowOWdjKy5vHtm7XDaDjTqY6Sh9oFTyb+M3rU9wmsuMhFVwSzMp5avEgr8Jr3LMrOGos6O2dS4Kg795fePh5Shf2cIe07YfZ6uzagPYbOd88xt8pp2/DGoC5pFgRgMGXYZRvDps0Zw60bJoVKa1UbU9Jjhhr67dM468iJ6Gx4az9m9Xu66ToyL0YbY88D6QPMVL/ADbUhu7mvU7p54BBOD0G/wBZu31l21zh6hNGiinTnbAG/wD1xLO29H6fZ2iliBTFSq2MDJBBwduWTNW74XVFIog1Va5DsRsUpfm8Of0gVdtlqr3NVvuxkkdCD7K7+P6Sxs6lS7q6+1U0l/ZQHSnm2efSVz2wrFKFPT9mpHL1WbIZid/ieWJvvbJUQULeh93qyTnGo+LH4wMcds6HEEa1ONIGVdRutXJ5Hw2HKcc4hYva1qlCoMOjYPgfePdO2faKNonZqBUqYwdPsDG2P5eM8l6d8Gevam+cAVqRCvpx3kJ25eGZBzvMkESSDc9C+GC6vqSMcIp1t5KRgfPE7ZdoGUqAGbIIIKhh8Dg8hOUerKjRNxVqV6y01FPSAWVS2rngnwx0nUqlza5JNxRO3dDMpAHLGNXeHnGrhd3X74p1c9koUa2JVwxHMHr9YCUhpKKVdWHsPnUTt0zvseYh0FUqFe6pEDYBWXSeWMqciFacJptXpNhWKnVlGAC43Uac77+Al2GLvhNgtGmABgk6sYGUJ/ZGI+pV0nP5g234h7XzGTJXzjbnPKcV461ElXUj9JbZCTXoBUAXSx206T/o1uz/AETHxj0rZ1Fsguw16fa/LRT3gc/DeeR4dxY127oPn0znM9RY03G4puTjGT3AB4ajuB5DJ8TEpY1ePWSLTao6HQBqNvQxk/mbHXxlFVtbiqilaotLcKBoPd7p645npznra14lNSKl1QoJ1Csur/cTz+E59e+kHDVZu1uLm6IYgBVULgH8Z3I94hFza9jaUSKdXtquQfvdkxvkqPfiCbutfrWRqTdi1J0CopI1dMyj/rBtaX924avTvVny23wP6xFb1p3pPcp0UHgFJ+pMaOfshUkHmCQfMSTZrMXZnb2mYsfMnJmJkUcEiZzJKrIE2LS6qUW10qjI2MZRiDjwyIgQhCLP+kV7/nK//I//ALG2fHa4qpUrV6tVUZW0O5KsQeRz0lSIUhrovGfWUDa9jY06lGq5BeqzDUPHTjyx02nh7jilxVz2lxVfP46jH+M1VEaqyiU6c2kpwKYj1kGQkyFhQhAHTJGCSB5UGEDFAwxCmAwxEgximA0QhFgw1MIckYsUpjBAekcpiEjlMBohiLBhiAyYmRJA8gIQkkhoQhiSSEGIaySQhixiySQHoY9JJIUwQ1kkhDRMSSQP/9k=" alt="Somos Abanico icon">
-                                <div class="timeline_desc">
-                                    <h3 class="Rol">Consultora Comercial & Logística</h3>
-                                    <p class="Empresa">Somos Abanico - Co-Creadora</p>
-                                    <small class="tiempo">Sept. 2024 - Actualidad</small>
-                                    <span class="timeline_container_arrow"></span>
-                                </div>
-                            </div>
-                        
-                            <div class="timeline_container">
-                                <img src="img/timelines/swatch-eps-vector-logo.png" alt="Swatch icon">
-                                <div class="timeline_desc">
-                                    <h3 class="Rol">Gerente de Logística y Supply Chain Management</h3>
-                                    <p class="Empresa">Swatch Argentina</p>
-                                    <small class="tiempo">Mar. 2022 - Mar. 2024</small>
-                                    <span class="timeline_container_arrow"></span>
-                                </div>
-                            </div>        
-                        
-                            <div class="timeline_container">
-                                <img src="img/timelines/Swarovski-logo.jpeg" alt="Swarovski icon">
-                                <div class="timeline_desc">
-                                    <h3 class="Rol">Brand Manager</h3>
-                                    <p class="Empresa">Swarovski</p>
-                                    <small class="tiempo">Jun. 2016 - Jul. 2019</small>
-                                    <span class="timeline_container_arrow"></span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+            <aside>
+                <div class="about_description">
+                    <!-- <h2>Consultoría Empresarial & Gestión Comercial</h2> -->
+                    <p>Consultora empresarial especializada en gestión comercial y optimización de procesos. Acompaño a empresas en sus procesos de crecimiento y transformación estratégica, ayudándolas a mejorar su eficiencia operativa y potenciar su desarrollo comercial.</p>
+                    <!-- <p>Mi enfoque combina experiencia práctica con una visión estratégica, permitiéndome ofrecer soluciones personalizadas que se adaptan a las necesidades específicas de cada organización. Trabajo de manera colaborativa con los equipos internos para asegurar una implementación efectiva y sostenible de las mejoras propuestas.</p> -->
+                    <!-- <p>Actualmente, lidero proyectos de consultoría en Estudio Fresa y co-creo Somos Abanico, donde aplico mis conocimientos para generar un impacto positivo en las empresas con las que colaboro.</p> -->
                 </div>
+            </aside>
 
-                <!-- Timeline 2 -->
-                <div class="timeline_scale_wrapper">
-                    <div class="timeline_card">
-                        <div class="timeline_title">
-                            <h2>Formación</h2>
-                            <div class="timeline_card_text">
-                                <p>Mi formación fue evolucionando junto a mi práctica profesional. Complementé la experiencia en operaciones y desarrollo comercial con estudios orientados a la estrategia, la gestión de procesos y el trabajo con equipos. Me interesa especialmente cómo las herramientas metodológicas pueden convertirse en puentes entre el análisis y la acción.</p>
-                            </div>
-                        </div>
-
-                        <div class="timeline timeline2">
-                            <div class="timeline_container">
-                                <img src="img/timelines/utn_frba_logo.jpeg" alt="Estudio Fresa icon">
-
-                                <div class="timeline_desc">
-                                    <h3 class="Rol">Logística y Supply Managment</h3>
-                                    <p class="Empresa">UTN FRBA</p>
-                                    <small class="tiempo">Mar. 2024 - Actualidad</small>
-                                    <span class="timeline_container_arrow"></span>
-                                </div>
-                            </div>
-
-                            <div class="timeline_container">
-                                <img src="img/timelines/ITBA universidad-logo.jpeg" alt="Somos Abanico icon">
-
-                                <div class="timeline_desc">
-                                    <h3 class="Rol">Marketing Cuantitativo</h3>
-                                    <p class="Empresa">ITBA</p>
-                                    <small class="tiempo">Sept. 2024 - Actualidad</small>
-                                    <span class="timeline_container_arrow"></span>
-                                </div>
-                            </div>
-
-                            <div class="timeline_container">
-                                <img src="img/timelines/uade_logo.jpeg" alt="Swatch icon">
-
-                                <div class="timeline_desc">
-                                    <h3 class="Rol">Licenciatura en Administración y Gestión de Empresas</h3>
-                                    <p class="Empresa">UADE</p>
-                                    <small class="tiempo">Mar. 2022 - Mar. 2024</small>
-                                    <span class="timeline_container_arrow"></span>
-                                </div>
-                            </div>        
-
-                            <div class="timeline_container">
-                                <img src="img/timelines/upv_logo.jpeg" alt="Swarovski icon">
-
-                                <div class="timeline_desc">
-                                    <h3 class="Rol">Business & Managment course</h3>
-                                    <p class="Empresa">UPV</p>
-                                    <small class="tiempo">Jun. 2016 - Jul. 2019</small>
-                                    <span class="timeline_container_arrow"></span>
-                                </div>
-                            </div>
-
-                            <div class="timeline_container">
-                                <img src="img/timelines/hublogistico_logo.jpeg" alt="Swarovski icon">
-
-                                <div class="timeline_desc">
-                                    <h3 class="Rol">Lean Logistics White Belt</h3>
-                                    <p class="Empresa">Hublogistico.com</p>
-                                    <small class="tiempo">Jun. 2016 - Jul. 2019</small>
-                                    <span class="timeline_container_arrow"></span>
-                                </div>
-                            </div>
-
-                            <div class="timeline_container">
-                                <img src="img/timelines/ITBA universidad-logo.jpeg" alt="Swarovski icon">
-
-                                <div class="timeline_desc">
-                                    <h3 class="Rol">Emerging Tech</h3>
-                                    <p class="Empresa">ITBA</p>
-                                    <small class="tiempo">Jun. 2016 - Jul. 2019</small>
-                                    <span class="timeline_container_arrow"></span>
-                                </div>
-                            </div>
-                        </div>
-
-                    </div>
-                </div>
-
-                <!-- Timeline 3 -->
-                <div class="timeline_scale_wrapper">
-                    <div class="timeline_card">
-                        <div class="timeline_title">
-                            <h2>Metodología</h2>
-                            <div class="timeline_card_text">
-                                <p>Creo en una gestión cercana, práctica y consciente del contexto. Trabajo desde una mirada integral: comprender primero, actuar con intención, modelar procesos que acompañen el crecimiento y ayudar a los equipos a integrar nuevas formas de trabajo.</p>
-                            </div>
-                        </div>
-                    
-                        <div class="timeline">
-                            <div class="timeline_container">
-                                <img src="img/100x100.png" alt="Estudio Fresa icon">
-                            
-                                <div class="timeline_desc">
-                                    <h3 class="Rol">Comprender</h3>
-                                    <p class="Empresa">Analizar el estado actual del negocio, sus procesos y desafíos.</p>
-                                    <small class="tiempo">Mar. 2024 - Actualidad</small>
-                                    <span class="timeline_container_arrow"></span>
-                                </div>
-                            </div>
-                        
-                            <div class="timeline_container">
-                                <img src="img/100x100.png" alt="Somos Abanico icon">
-                            
-                                <div class="timeline_desc">
-                                    <h3 class="Rol">Actuar</h3>
-                                    <p class="Empresa">Definir un plan claro, con objetivos y responsabilidades.</p>
-                                    <small class="tiempo">Sept. 2024 - Actualidad</small>
-                                    <span class="timeline_container_arrow"></span>
-                                </div>
-                            </div>
-                        
-                            <div class="timeline_container">
-                                <img src="img/100x100.png" alt="Swatch icon">
-                            
-                                <div class="timeline_desc">
-                                    <h3 class="Rol">Modelar</h3>
-                                    <p class="Empresa">Implementar un sistema estructurado, adaptable y sostenible.</p>
-                                    <small class="tiempo">Mar. 2022 - Mar. 2024</small>
-                                    <span class="timeline_container_arrow"></span>
-                                </div>
-                            </div>        
-                        
-                            <div class="timeline_container">
-                                <img src="img/100x100.png" alt="Swarovski icon">
-                            
-                                <div class="timeline_desc">
-                                    <h3 class="Rol">Integrar</h3>
-                                    <p class="Empresa">Consoliddar las mejoras en la cultura y operación de la empresa.</p>
-                                    <small class="tiempo">Jun. 2016 - Jul. 2019</small>
-                                    <span class="timeline_container_arrow"></span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Timeline 4 -->
-                <div class="timeline_scale_wrapper">
-                    <div class="timeline_card resume">
-                        <div class="timeline_title">
-                            <h2>Resume</h2>
-                            <div class="timeline_card_text">
-                                <p>Descargá mi curriculum haciendo click en el siguiente enlace.</p>
-                            </div>
-                        </div>
-
-                        <div class="timeline">
-                            <div class="timeline_container">
-                                <div class="resume_button cta_btn">
-                                    <a href="docs/Camila_Oyharzabal_CV.pdf" target="_blank">
-                                        Descargar CV
-                                    </a>
-                                </div>
-                            </div> 
-                        </div>
-                        
-                    </div>
-                </div>
-
-
-            </aside>        
+                   
         </div>
 
-        
+    </section>
+    
+    <section class="aside_container scroll_section">
+        <!-- Timeline 1 -->
+        <div class="timeline_scale_wrapper" data-aos="fade-up">
+            <div class="timeline_card">    
+                <div class="timeline_title">
+                    <h2>Trayectoria</h2>
+                    <div class="timeline_card_text">
+                        <p>Durante más de 15 años trabajé en logística, retail y gestión comercial, liderando equipos y acompañando a organizaciones en procesos de crecimiento y transformación. Ese recorrido me permitió integrar lo operativo con lo estratégico, entender la dinámica real de las empresas y aprender a convertir diagnósticos en acciones concretas.</p>
+                    </div>
+                </div>
+            
+                <div class="timeline">
+                    <div class="timeline_container">
+                        <img src="img/timelines/fresa-logo.png" alt="Estudio Fresa - Director de Proyecto">
+                        <div class="timeline_desc">
+                            <h3 class="Rol">Director de Proyecto</h3>
+                            <p class="Empresa">Estudio Fresa</p>
+                            <small class="tiempo">Mar. 2024 - Actualidad</small>
+                            <span class="timeline_container_arrow"></span>
+                        </div>
+                    </div>
+                
+                    <div class="timeline_container">
+                        <img src="img/timelines/somos-abanico.jpg" alt="Somos Abanico - Consultora Comercial & Logística">
+                        <div class="timeline_desc">
+                            <h3 class="Rol">Consultora Comercial & Logística</h3>
+                            <p class="Empresa">Somos Abanico - Co-Creadora</p>
+                            <small class="tiempo">Sept. 2024 - Actualidad</small>
+                            <span class="timeline_container_arrow"></span>
+                        </div>
+                    </div>
+                
+                    <div class="timeline_container">
+                        <img src="img/timelines/swatch-eps-vector-logo.png" alt="Swatch Argentina - Gestión logística y supply chain">
+                        <div class="timeline_desc">
+                            <h3 class="Rol">Gerente de Logística y Supply Chain Management</h3>
+                            <p class="Empresa">Swatch Argentina</p>
+                            <small class="tiempo">Mar. 2022 - Mar. 2024</small>
+                            <span class="timeline_container_arrow"></span>
+                        </div>
+                    </div>        
+                
+                    <div class="timeline_container">
+                        <img src="img/timelines/Swarovski-logo.jpeg" alt="Swarovski - Brand Manager">
+                        <div class="timeline_desc">
+                            <h3 class="Rol">Brand Manager</h3>
+                            <p class="Empresa">Swarovski</p>
+                            <small class="tiempo">Jun. 2016 - Jul. 2019</small>
+                            <span class="timeline_container_arrow"></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Timeline 2 -->
+        <div class="timeline_scale_wrapper" data-aos="fade-up">
+            <div class="timeline_card">
+                <div class="timeline_title">
+                    <h2>Formación</h2>
+                    <div class="timeline_card_text">
+                        <p>Mi formación fue evolucionando junto a mi práctica profesional. Complementé la experiencia en operaciones y desarrollo comercial con estudios orientados a la estrategia, la gestión de procesos y el trabajo con equipos. Me interesa especialmente cómo las herramientas metodológicas pueden convertirse en puentes entre el análisis y la acción.</p>
+                    </div>
+                </div>
+
+                <div class="timeline timeline2">
+                    <div class="timeline_container">
+                        <img src="img/timelines/utn_frba_logo.jpeg" alt="UTN FRBA - Logística y Supply Managment">
+
+                        <div class="timeline_desc">
+                            <h3 class="Rol">Logística y Supply Managment</h3>
+                            <p class="Empresa">UTN FRBA</p>
+                            <small class="tiempo">Mar. 2024 - Actualidad</small>
+                            <span class="timeline_container_arrow"></span>
+                        </div>
+                    </div>
+
+                    <div class="timeline_container">
+                        <img src="img/timelines/ITBA universidad-logo.jpeg" alt="ITBA - Marketing Cuantitativo">
+
+                        <div class="timeline_desc">
+                            <h3 class="Rol">Marketing Cuantitativo</h3>
+                            <p class="Empresa">ITBA</p>
+                            <small class="tiempo">Sept. 2024 - Actualidad</small>
+                            <span class="timeline_container_arrow"></span>
+                        </div>
+                    </div>
+
+                    <div class="timeline_container">
+                        <img src="img/timelines/uade_logo.jpeg" alt="UADE - Licenciatura en Administración y Gestión de Empresas">
+
+                        <div class="timeline_desc">
+                            <h3 class="Rol">Licenciatura en Administración y Gestión de Empresas</h3>
+                            <p class="Empresa">UADE</p>
+                            <small class="tiempo">Mar. 2022 - Mar. 2024</small>
+                            <span class="timeline_container_arrow"></span>
+                        </div>
+                    </div>        
+
+                    <div class="timeline_container">
+                        <img src="img/timelines/upv_logo.jpeg" alt="UPV - Business & Managment course">
+
+                        <div class="timeline_desc">
+                            <h3 class="Rol">Business & Managment course</h3>
+                            <p class="Empresa">UPV</p>
+                            <small class="tiempo">Jun. 2016 - Jul. 2019</small>
+                            <span class="timeline_container_arrow"></span>
+                        </div>
+                    </div>
+
+                    <div class="timeline_container">
+                        <img src="img/timelines/hublogistico_logo.jpeg" alt="Hub Logístico - Lean Logistics White Belt">
+
+                        <div class="timeline_desc">
+                            <h3 class="Rol">Lean Logistics White Belt</h3>
+                            <p class="Empresa">Hublogistico.com</p>
+                            <small class="tiempo">Jun. 2016 - Jul. 2019</small>
+                            <span class="timeline_container_arrow"></span>
+                        </div>
+                    </div>
+
+                    <div class="timeline_container">
+                        <img src="img/timelines/ITBA universidad-logo.jpeg" alt="ITBA - Emerging Tech">
+
+                        <div class="timeline_desc">
+                            <h3 class="Rol">Emerging Tech</h3>
+                            <p class="Empresa">ITBA</p>
+                            <small class="tiempo">Jun. 2016 - Jul. 2019</small>
+                            <span class="timeline_container_arrow"></span>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <!-- Timeline 3 -->
+        <div class="timeline_scale_wrapper" data-aos="fade-up">
+            <div class="timeline_card">
+                <div class="timeline_title">
+                    <h2>Metodología</h2>
+                    <div class="timeline_card_text">
+                        <p>Creo en una gestión cercana, práctica y consciente del contexto. Trabajo desde una mirada integral: comprender primero, actuar con intención, modelar procesos que acompañen el crecimiento y ayudar a los equipos a integrar nuevas formas de trabajo.</p>
+                    </div>
+                </div>
+            
+                <div class="timeline">
+                    <div class="timeline_container">
+                        <img src="img/100x100.png" alt="Estudio Fresa icon">
+                    
+                        <div class="timeline_desc">
+                            <h3 class="Rol">Comprender</h3>
+                            <p class="Empresa">Analizar el estado actual del negocio, sus procesos y desafíos.</p>
+                            <small class="tiempo">Mar. 2024 - Actualidad</small>
+                            <span class="timeline_container_arrow"></span>
+                        </div>
+                    </div>
+                
+                    <div class="timeline_container">
+                        <img src="img/100x100.png" alt="Somos Abanico icon">
+                    
+                        <div class="timeline_desc">
+                            <h3 class="Rol">Actuar</h3>
+                            <p class="Empresa">Definir un plan claro, con objetivos y responsabilidades.</p>
+                            <small class="tiempo">Sept. 2024 - Actualidad</small>
+                            <span class="timeline_container_arrow"></span>
+                        </div>
+                    </div>
+                
+                    <div class="timeline_container">
+                        <img src="img/100x100.png" alt="Swatch icon">
+                    
+                        <div class="timeline_desc">
+                            <h3 class="Rol">Modelar</h3>
+                            <p class="Empresa">Implementar un sistema estructurado, adaptable y sostenible.</p>
+                            <small class="tiempo">Mar. 2022 - Mar. 2024</small>
+                            <span class="timeline_container_arrow"></span>
+                        </div>
+                    </div>        
+                
+                    <div class="timeline_container">
+                        <img src="img/100x100.png" alt="Swarovski icon">
+                    
+                        <div class="timeline_desc">
+                            <h3 class="Rol">Integrar</h3>
+                            <p class="Empresa">Consoliddar las mejoras en la cultura y operación de la empresa.</p>
+                            <small class="tiempo">Jun. 2016 - Jul. 2019</small>
+                            <span class="timeline_container_arrow"></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Timeline 4 -->
+        <div class="timeline_scale_wrapper" data-aos="fade-up">
+            <div class="timeline_card resume">
+                <div class="timeline_title">
+                    <h2>Resume</h2>
+                    <div class="timeline_card_text">
+                        <p>Descargá mi curriculum haciendo click en el siguiente enlace.</p>
+                    </div>
+                </div>
+
+                <div class="timeline">
+                    <div class="timeline_container">
+                        <div class="resume_button cta_btn">
+                            <a href="docs/Camila_Oyharzabal_CV.pdf" target="_blank">
+                                Descargar CV
+                            </a>
+                        </div>
+                    </div> 
+                </div>
+                
+            </div>
+        </div>
 
     </section>
 
 <!-- Testimonios reales obtenidos de LinkedIn - Tarjetas con img, nombre y empresa estilizadas como LinkedIn-->
-    <section id="testimonios" class="container testimonios_container" data-aos="fade-left">
-        <div class="testimonios_title">
-            <h2>Testimonios</h2>
-        </div>
-        <!--Slider con las marcas a las que estuvo involucrada laboralmente-->
-        <div class="carousel" id="circular-carousel">
-
-            <button class="carousel_button carousel_button--prev" aria-label="Tarjeta anterior">
-                ‹
-            </button>
-
-            <div class="carousel_viewport">
-
-                <div class="carousel_container">
-
-                    <!-- <div class="carousel_item" data-index="1">
-                        <div class="carousel_img">
-                            <img src="img/persona.png" alt="slide 1">
-                        </div>
-                        <div class="carousel_text">
-                            <h2>Juan</h2>
-                            <h3>Empresa</h3>
-                            <div class="texto-clamp">
-                                <p class="clampado" data-lines="3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique qui maiores, earum voluptate consequatur sequi ipsum nobis veniam rerum suscipit delectus! Ducimus distinctio modi perferendis possimus, minus deserunt tempore nemo!</p>
-                                <button class="btn-vermas">Ver más</button>
-                            </div>
-                            <div class="carousle_link">
-                                <a href="https://www.linkedin.com/in/camila-oyharz%C3%A1bal-95178ab8/details/recommendations/?detailScreenTabIndex=0"><div class="icon"><svg><use href="assets/sprite-base.svg#icon-linkedin"></use></svg></div></a>
-                                <a href="https://www.linkedin.com/in/camila-oyharz%C3%A1bal-95178ab8/details/recommendations/?detailScreenTabIndex=0"><div class="icon"><svg><use href="assets/sprite-base.svg#icon-link"></use></svg></div></a>
-                            </div>
-                        </div>
-                    </div> -->
-
-                    <div class="carousel_item" data-index="2">
-                    <div class="carousel_img">
-                            <img src="https://media.licdn.com/dms/image/v2/D4D03AQGtMrtUL3KwRQ/profile-displayphoto-scale_100_100/B4DZpvPl0QIAAc-/0/1762802951272?e=1767225600&v=beta&t=4OAWcOH8CDvyu0fE0VFltq-3KBZrpy1IyRSC0Mgghmg" alt="slide 1">
-                        </div>
-                        <div class="carousel_text">
-                            <h2>Luciana B.</h2>
-                            <h3>Somos Abanico</h3>
-                            <div class="texto-clamp">
-                                <p class="clampado" data-lines="3">Trabajar con Cami siempre ha sido una experiencia positiva y enriquecedora, su dedicación y profesionalismo, junto a su liderazgo, han marcado el rumbo en los buenos momentos y en los difíciles. Compartimos más de 10 años en la misma empresa y hoy estoy súper feliz de emprender un nuevo camino juntas.</p>
-                                <button class="btn-vermas">Ver más</button>
-                            </div>
-                            <div class="carousle_link">
-                                <a href="https://www.linkedin.com/in/camila-oyharz%C3%A1bal-95178ab8/details/recommendations/?detailScreenTabIndex=0"><div class="icon"><svg><use href="assets/sprite-base.svg#icon-linkedin"></use></svg></div></a>
-                                <a href="https://www.linkedin.com/in/camila-oyharz%C3%A1bal-95178ab8/details/recommendations/?detailScreenTabIndex=0"><div class="icon"><svg><use href="assets/sprite-base.svg#icon-link"></use></svg></div></a>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="carousel_item" data-index="3">
-                        <div class="carousel_img">
-                            <img src="https://media.licdn.com/dms/image/v2/D4D03AQEmDTYvds3zVw/profile-displayphoto-shrink_100_100/profile-displayphoto-shrink_100_100/0/1708097012306?e=1767225600&v=beta&t=QuFbIwnC-au8tEmg8s2oAXXQFAmdnDhrr0Tu5CQPhvg" alt="slide 1">
-                        </div>
-                        <div class="carousel_text">
-                            <h2>Carlos Jamardo Arrigo</h2>
-                            <h3>Empresa</h3>
-                            <div class="texto-clamp">
-                                <p class="clampado" data-lines="3">Camila es una persona fuertemente comprometida con su trabajo y con la organización. Es una persona expeditiva y resolutiva en las decisiones. Es muy proactiva y tiene un gran entusiasmo que lo transmite constantemente. Más allá de lo profesional, es una gran persona, con la que se puede contar. Trabajar con ella fue una grata experiencia que espero que en algún momento se repita.</p>
-                                <button class="btn-vermas">Ver más</button>
-                            </div>
-                            <div class="carousle_link">
-                                <a href="https://www.linkedin.com/in/camila-oyharz%C3%A1bal-95178ab8/details/recommendations/?detailScreenTabIndex=0"><div class="icon"><svg><use href="assets/sprite-base.svg#icon-linkedin"></use></svg></div></a>
-                                <a href="https://www.linkedin.com/in/camila-oyharz%C3%A1bal-95178ab8/details/recommendations/?detailScreenTabIndex=0"><div class="icon"><svg><use href="assets/sprite-base.svg#icon-link"></use></svg></div></a>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="carousel_item" data-index="4">
-                        <div class="carousel_img">
-                            <img src="https://media.licdn.com/dms/image/v2/D4E03AQGqYC3LyKxk9g/profile-displayphoto-scale_100_100/B4EZn9yPFAGoAc-/0/1760899440151?e=1767225600&v=beta&t=elLol23YEF3y5ujUuL9ZJeQT-iPdKLyTHLCMW2enedI" alt="slide 1">
-                        </div>
-                        <div class="carousel_text">
-                            <h2>Marella Mata</h2>
-                            <h3>Swarovski</h3>
-                            <div class="texto-clamp">
-                                <p class="clampado" data-lines="3">Camila, it was always a pleasure to work with you when I was at Swarovski. Your partnership was always key to successful campaigns and profitability of the business. You have a great concept of team work and know how to manage properly the business. Thank you for making my job very pleasant while we worked together.</p>
-                                <button class="btn-vermas">Ver más</button>
-                            </div>
-                            <div class="carousle_link">
-                                <a href="https://www.linkedin.com/in/camila-oyharz%C3%A1bal-95178ab8/details/recommendations/?detailScreenTabIndex=0"><div class="icon"><svg><use href="assets/sprite-base.svg#icon-linkedin"></use></svg></div></a>
-                                <a href="https://www.linkedin.com/in/camila-oyharz%C3%A1bal-95178ab8/details/recommendations/?detailScreenTabIndex=0"><div class="icon"><svg><use href="assets/sprite-base.svg#icon-link"></use></svg></div></a>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="carousel_item" data-index="5">
-                        <div class="carousel_img">
-                            <img src="https://media.licdn.com/dms/image/v2/D4E03AQFMsSjrBZlg_w/profile-displayphoto-scale_100_100/B4EZpUoVU1IwAc-/0/1762356451249?e=1767225600&v=beta&t=VAHnL8MhbdF_fmbuIs0bJyri-czVPUiYkju_POO8mLI" alt="slide 1">
-                        </div>
-                        <div class="carousel_text">
-                            <h2>Liliana Zamudio De Rivera</h2>
-                            <h3>Empresa</h3>
-                            <div class="texto-clamp">
-                                <p class="clampado" data-lines="3">Working with Camila in Argentina was an absolute pleasure. She played a key role in establishing our group brands’ image in the local market, worked as a liaison between our sister brands and local sales staff and always offered our company transparency and a good visibility of the country allowing us to become more familiar with the challenges and opportunities in Argentina. She’s passionate, a team player and would be an asset to any company.</p>
-                                <button class="btn-vermas">Ver más</button>
-                            </div>
-                            <div class="carousle_link">
-                                <a href="https://www.linkedin.com/in/camila-oyharz%C3%A1bal-95178ab8/details/recommendations/?detailScreenTabIndex=0"><div class="icon"><svg><use href="assets/sprite-base.svg#icon-linkedin"></use></svg></div></a>
-                                <a href="https://www.linkedin.com/in/camila-oyharz%C3%A1bal-95178ab8/details/recommendations/?detailScreenTabIndex=0"><div class="icon"><svg><use href="assets/sprite-base.svg#icon-link"></use></svg></div></a>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="carousel_item" data-index="6">
-                        <div class="carousel_img">
-                            <img src="https://media.licdn.com/dms/image/v2/D4D03AQGrnQbHZB73EA/profile-displayphoto-scale_100_100/B4DZmg25XmJIAg-/0/1759340373266?e=1767225600&v=beta&t=-VJbWcqt1p3d3c1ensIMecWKYHMIAzvqo7fh_5LUMNg" alt="slide 1">
-                        </div>
-                        <div class="carousel_text">
-                            <h2>Marina Tavelli</h2>
-                            <h3>Swatch</h3>
-                            <div class="texto-clamp">
-                                <p class="clampado" data-lines="3">Mi experiencia trabajando con Camila en Swatch, específicamente en Retail, fue muy productiva, siempre comprometida frente a los desafíos y dispuesta a trabajar profesionalmente. Liderando su equipo se destacó por ser pro activa, positiva y generosa.</p>
-                                <button class="btn-vermas">Ver más</button>
-                            </div>
-                            <div class="carousle_link">
-                                <a href="https://www.linkedin.com/in/camila-oyharz%C3%A1bal-95178ab8/details/recommendations/?detailScreenTabIndex=0"><div class="icon"><svg><use href="assets/sprite-base.svg#icon-linkedin"></use></svg></div></a>
-                                <a href="https://www.linkedin.com/in/camila-oyharz%C3%A1bal-95178ab8/details/recommendations/?detailScreenTabIndex=0"><div class="icon"><svg><use href="assets/sprite-base.svg#icon-link"></use></svg></div></a>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="carousel_item" data-index="7">
-                        <div class="carousel_img">
-                            <img src="https://media.licdn.com/dms/image/v2/C4E03AQHnQDqpj99l_A/profile-displayphoto-shrink_100_100/profile-displayphoto-shrink_100_100/0/1632282855326?e=1767225600&v=beta&t=42s2YqD1AAQkxyBiIHYY15KbsQH9_i28NGcmlBoz0lg" alt="slide 1">
-                        </div>
-                        <div class="carousel_text">
-                            <h2>Juan Pedro Stoler, M.I.M.</h2>
-                            <h3>Swarovski</h3>
-                            <div class="texto-clamp">
-                                <p class="clampado" data-lines="3">I had the opportunity to work with Cami during her employment at the company that I appointed as distributor of the Swarovski brand in Argentina where she performed brand management duties. During the initial phases involving selection of the channels and retail network across the nation, to those involving training, assortment strategy and visual merchandising, through launch and analysis of results for improvements and growth, I found Cami to be a reliable professional. She displays capacity to communicate effectively, interact freely with people, and execute reliably.</p>
-                                <button class="btn-vermas">Ver más</button>
-                            </div>
-                            <div class="carousle_link">
-                                <a href="https://www.linkedin.com/in/camila-oyharz%C3%A1bal-95178ab8/details/recommendations/?detailScreenTabIndex=0"><div class="icon"><svg><use href="assets/sprite-base.svg#icon-linkedin"></use></svg></div></a>
-                                <a href="https://www.linkedin.com/in/camila-oyharz%C3%A1bal-95178ab8/details/recommendations/?detailScreenTabIndex=0"><div class="icon"><svg><use href="assets/sprite-base.svg#icon-link"></use></svg></div></a>
-                            </div>
-                        </div>
-                    </div>
-
+    <section id="testimonios" class="container testimonios_container scroll_section" data-aos="fade-left">
+        <div class="testimonios_layout">
+            <!-- SECCION DE TESTIMONIOS -->
+            <div class="testimonios">    
+                <div class="testimonios_title">
+                    <h2>Testimonios</h2>
+                    <p class="testimonios_subtitle">Experiencias reales de personas con las que trabajé.</p>
                 </div>
+                <!--Slider con las marcas a las que estuvo involucrada laboralmente-->
+                <div class="carousel" id="circular-carousel">
+                
+                    <button class="carousel_button carousel_button--prev" aria-label="Tarjeta anterior">
+                        ‹
+                    </button>
+                
+                    <div class="carousel_viewport">
+                    
+                        <div class="carousel_container">
+                        
+                            <!-- <div class="carousel_item" data-index="1">
+                                <div class="carousel_img">
+                                    <img src="img/persona.png" alt="slide 1">
+                                </div>
+                                <div class="carousel_text">
+                                    <h2>Juan</h2>
+                                    <h3>Empresa</h3>
+                                    <div class="texto-clamp">
+                                        <p class="clampado" data-lines="3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique qui maiores, earum voluptate consequatur sequi ipsum nobis veniam rerum suscipit delectus! Ducimus distinctio modi perferendis possimus, minus deserunt tempore nemo!</p>
+                                        <button class="btn-vermas">Ver más</button>
+                                    </div>
+                                    <div class="carousle_link">
+                                        <a href="https://www.linkedin.com/in/camila-oyharz%C3%A1bal-95178ab8/details/recommendations/?detailScreenTabIndex=0"><div class="icon"><svg><use href="assets/sprite-base.svg#icon-linkedin"></use></svg></div></a>
+                                        <a href="https://www.linkedin.com/in/camila-oyharz%C3%A1bal-95178ab8/details/recommendations/?detailScreenTabIndex=0"><div class="icon"><svg><use href="assets/sprite-base.svg#icon-link"></use></svg></div></a>
+                                    </div>
+                                </div>
+                            </div> -->
+                        
+                            <div class="carousel_item" data-index="2">
+                            <div class="carousel_img">
+                                    <img src="https://media.licdn.com/dms/image/v2/D4D03AQGtMrtUL3KwRQ/profile-displayphoto-scale_100_100/B4DZpvPl0QIAAc-/0/1762802951272?e=1767225600&v=beta&t=4OAWcOH8CDvyu0fE0VFltq-3KBZrpy1IyRSC0Mgghmg" alt="Luciana B. - Somos Abanico">
+                                </div>
+                                <div class="carousel_text">
+                                    <h2>Luciana B.</h2>
+                                    <h3>Somos Abanico</h3>
+                                    <div class="texto-clamp">
+                                        <p class="clampado" data-lines-desktop="4" data-lines-mobile="8" >Trabajar con Cami siempre ha sido una experiencia positiva y enriquecedora, su dedicación y profesionalismo, junto a su liderazgo, han marcado el rumbo en los buenos momentos y en los difíciles. Compartimos más de 10 años en la misma empresa y hoy estoy súper feliz de emprender un nuevo camino juntas.</p>
+                                        <button class="btn-vermas">Ver más</button>
+                                    </div>
+                                    <div class="carousle_link">
+                                        <a href="https://www.linkedin.com/in/camila-oyharz%C3%A1bal-95178ab8/details/recommendations/?detailScreenTabIndex=0"><div class="icon"><svg><use href="assets/sprite-base.svg#icon-linkedin"></use></svg></div></a>
+                                        <a href="https://www.linkedin.com/in/camila-oyharz%C3%A1bal-95178ab8/details/recommendations/?detailScreenTabIndex=0"><div class="icon"><svg><use href="assets/sprite-base.svg#icon-link"></use></svg></div></a>
+                                    </div>
+                                </div>
+                            </div>
+                        
+                            <div class="carousel_item" data-index="3">
+                                <div class="carousel_img">
+                                    <img src="https://media.licdn.com/dms/image/v2/D4D03AQEmDTYvds3zVw/profile-displayphoto-shrink_100_100/profile-displayphoto-shrink_100_100/0/1708097012306?e=1767225600&v=beta&t=QuFbIwnC-au8tEmg8s2oAXXQFAmdnDhrr0Tu5CQPhvg" alt="Carlos Jamardo Arrigo - Empresa">
+                                </div>
+                                <div class="carousel_text">
+                                    <h2>Carlos Jamardo Arrigo</h2>
+                                    <h3>Empresa</h3>
+                                    <div class="texto-clamp">
+                                        <p class="clampado" data-lines-desktop="4" data-lines-mobile="8" >Camila es una persona fuertemente comprometida con su trabajo y con la organización. Es una persona expeditiva y resolutiva en las decisiones. Es muy proactiva y tiene un gran entusiasmo que lo transmite constantemente. Más allá de lo profesional, es una gran persona, con la que se puede contar. Trabajar con ella fue una grata experiencia que espero que en algún momento se repita.</p>
+                                        <button class="btn-vermas">Ver más</button>
+                                    </div>
+                                    <div class="carousle_link">
+                                        <a href="https://www.linkedin.com/in/camila-oyharz%C3%A1bal-95178ab8/details/recommendations/?detailScreenTabIndex=0"><div class="icon"><svg><use href="assets/sprite-base.svg#icon-linkedin"></use></svg></div></a>
+                                        <a href="https://www.linkedin.com/in/camila-oyharz%C3%A1bal-95178ab8/details/recommendations/?detailScreenTabIndex=0"><div class="icon"><svg><use href="assets/sprite-base.svg#icon-link"></use></svg></div></a>
+                                    </div>
+                                </div>
+                            </div>
+                        
+                            <div class="carousel_item" data-index="4">
+                                <div class="carousel_img">
+                                    <img src="https://media.licdn.com/dms/image/v2/D4E03AQGqYC3LyKxk9g/profile-displayphoto-scale_100_100/B4EZn9yPFAGoAc-/0/1760899440151?e=1767225600&v=beta&t=elLol23YEF3y5ujUuL9ZJeQT-iPdKLyTHLCMW2enedI" alt="Marella Mata - Swarovski">
+                                </div>
+                                <div class="carousel_text">
+                                    <h2>Marella Mata</h2>
+                                    <h3>Swarovski</h3>
+                                    <div class="texto-clamp">
+                                        <p class="clampado" data-lines-desktop="4" data-lines-mobile="8" >Camila, it was always a pleasure to work with you when I was at Swarovski. Your partnership was always key to successful campaigns and profitability of the business. You have a great concept of team work and know how to manage properly the business. Thank you for making my job very pleasant while we worked together.</p>
+                                        <button class="btn-vermas">Ver más</button>
+                                    </div>
+                                    <div class="carousle_link">
+                                        <a href="https://www.linkedin.com/in/camila-oyharz%C3%A1bal-95178ab8/details/recommendations/?detailScreenTabIndex=0"><div class="icon"><svg><use href="assets/sprite-base.svg#icon-linkedin"></use></svg></div></a>
+                                        <a href="https://www.linkedin.com/in/camila-oyharz%C3%A1bal-95178ab8/details/recommendations/?detailScreenTabIndex=0"><div class="icon"><svg><use href="assets/sprite-base.svg#icon-link"></use></svg></div></a>
+                                    </div>
+                                </div>
+                            </div>
+                        
+                            <div class="carousel_item" data-index="5">
+                                <div class="carousel_img">
+                                    <img src="https://media.licdn.com/dms/image/v2/D4E03AQFMsSjrBZlg_w/profile-displayphoto-scale_100_100/B4EZpUoVU1IwAc-/0/1762356451249?e=1767225600&v=beta&t=VAHnL8MhbdF_fmbuIs0bJyri-czVPUiYkju_POO8mLI" alt="Liliana Zamudio De Rivera - Empresa">
+                                </div>
+                                <div class="carousel_text">
+                                    <h2>Liliana Zamudio De Rivera</h2>
+                                    <h3>Empresa</h3>
+                                    <div class="texto-clamp">
+                                        <p class="clampado" data-lines-desktop="4" data-lines-mobile="8" >Working with Camila in Argentina was an absolute pleasure. She played a key role in establishing our group brands’ image in the local market, worked as a liaison between our sister brands and local sales staff and always offered our company transparency and a good visibility of the country allowing us to become more familiar with the challenges and opportunities in Argentina. She’s passionate, a team player and would be an asset to any company.</p>
+                                        <button class="btn-vermas">Ver más</button>
+                                    </div>
+                                    <div class="carousle_link">
+                                        <a href="https://www.linkedin.com/in/camila-oyharz%C3%A1bal-95178ab8/details/recommendations/?detailScreenTabIndex=0"><div class="icon"><svg><use href="assets/sprite-base.svg#icon-linkedin"></use></svg></div></a>
+                                        <a href="https://www.linkedin.com/in/camila-oyharz%C3%A1bal-95178ab8/details/recommendations/?detailScreenTabIndex=0"><div class="icon"><svg><use href="assets/sprite-base.svg#icon-link"></use></svg></div></a>
+                                    </div>
+                                </div>
+                            </div>
+                        
+                            <div class="carousel_item" data-index="6">
+                                <div class="carousel_img">
+                                    <img src="https://media.licdn.com/dms/image/v2/D4D03AQGrnQbHZB73EA/profile-displayphoto-scale_100_100/B4DZmg25XmJIAg-/0/1759340373266?e=1767225600&v=beta&t=-VJbWcqt1p3d3c1ensIMecWKYHMIAzvqo7fh_5LUMNg" alt="Marina Tavelli - Swatch">
+                                </div>
+                                <div class="carousel_text">
+                                    <h2>Marina Tavelli</h2>
+                                    <h3>Swatch</h3>
+                                    <div class="texto-clamp">
+                                        <p class="clampado" data-lines-desktop="4" data-lines-mobile="8" >Mi experiencia trabajando con Camila en Swatch, específicamente en Retail, fue muy productiva, siempre comprometida frente a los desafíos y dispuesta a trabajar profesionalmente. Liderando su equipo se destacó por ser pro activa, positiva y generosa.</p>
+                                        <button class="btn-vermas">Ver más</button>
+                                    </div>
+                                    <div class="carousle_link">
+                                        <a href="https://www.linkedin.com/in/camila-oyharz%C3%A1bal-95178ab8/details/recommendations/?detailScreenTabIndex=0"><div class="icon"><svg><use href="assets/sprite-base.svg#icon-linkedin"></use></svg></div></a>
+                                        <a href="https://www.linkedin.com/in/camila-oyharz%C3%A1bal-95178ab8/details/recommendations/?detailScreenTabIndex=0"><div class="icon"><svg><use href="assets/sprite-base.svg#icon-link"></use></svg></div></a>
+                                    </div>
+                                </div>
+                            </div>
+                        
+                            <div class="carousel_item" data-index="7">
+                                <div class="carousel_img">
+                                    <img src="https://media.licdn.com/dms/image/v2/C4E03AQHnQDqpj99l_A/profile-displayphoto-shrink_100_100/profile-displayphoto-shrink_100_100/0/1632282855326?e=1767225600&v=beta&t=42s2YqD1AAQkxyBiIHYY15KbsQH9_i28NGcmlBoz0lg" alt="Juan Pedro Stoler - Swarovski">
+                                </div>
+                                <div class="carousel_text">
+                                    <h2>Juan Pedro Stoler, M.I.M.</h2>
+                                    <h3>Swarovski</h3>
+                                    <div class="texto-clamp">
+                                        <p class="clampado" data-lines-desktop="4" data-lines-mobile="8" >I had the opportunity to work with Cami during her employment at the company that I appointed as distributor of the Swarovski brand in Argentina where she performed brand management duties. During the initial phases involving selection of the channels and retail network across the nation, to those involving training, assortment strategy and visual merchandising, through launch and analysis of results for improvements and growth, I found Cami to be a reliable professional. She displays capacity to communicate effectively, interact freely with people, and execute reliably.</p>
+                                        <button class="btn-vermas">Ver más</button>
+                                    </div>
+                                    <div class="carousle_link">
+                                        <a href="https://www.linkedin.com/in/camila-oyharz%C3%A1bal-95178ab8/details/recommendations/?detailScreenTabIndex=0"><div class="icon"><svg><use href="assets/sprite-base.svg#icon-linkedin"></use></svg></div></a>
+                                        <a href="https://www.linkedin.com/in/camila-oyharz%C3%A1bal-95178ab8/details/recommendations/?detailScreenTabIndex=0"><div class="icon"><svg><use href="assets/sprite-base.svg#icon-link"></use></svg></div></a>
+                                    </div>
+                                </div>
+                            </div>
+                        
+                        </div>
+                    
+                    </div>
+                
+                    <button class="carousel_button carousel_button--next" aria-label="Tarjeta siguiente">
+                        ›
+                    </button>
+                
+                </div>
+            </div>
+        
+                <!-- SECCION DE CONTRIBUCIONES -->
+                 <!-- Empresas en las que se involucró laboralmente -->
+            <div class="contribuciones">
+                <div class="contribuciones_title">
+                    <h2>Contribuciones</h2>
+                    <p class="contribuciones_subtitle">Marcas y organizaciones con las que colaboré.</p>
+                </div>
+                <div id="contribuciones_slider" class="slider">
+                
+                    <button class="slider_button slider_button-prev">‹</button>
+                    
+                    <div class="slider_viewport">
+                    
+                        <div class="slider_container">
+                            <div class="slider_item">
+                                <div class="slider_img">
+                                    <img src="img/timelines/swatch-eps-vector-logo.png" alt="Swatch Argentina logo">
+                                </div>
+                            </div>
+                            <div class="slider_item">
+                                <div class="slider_img">
+                                    <img src="img/contribuciones/swarowski-logo-2.png" alt="Swarovski logo">
+                                </div>
+                            </div>
+                            <div class="slider_item">
+                                <div class="slider_img">
+                                    <img src="img/contribuciones/puma-logo.png" alt="Puma logo">
+                                </div>
+                            </div>
+                            <div class="slider_item">
+                                <div class="slider_img">
+                                    <img src="img/contribuciones/vans-logo.png" alt="Vans logo">
+                                </div>
+                            </div>
+                            <div class="slider_item">
+                                <div class="slider_img">
+                                    <img src="img/contribuciones/jordan-logo.png" alt="Jordan logo">
+                                </div>
+                            </div>
+                            <div class="slider_item">
+                                <div class="slider_img">
+                                    <img src="img/contribuciones/louis vuitton-logo.png" alt="Louis Vuitton logo">
+                                </div>
+                            </div>
+                            <div class="slider_item">
+                                <div class="slider_img">
+                                    <img src="img/contribuciones/heineken-logo.png" alt="Heineken logo">
+                                </div>
+                            </div>
+                        </div>
+                    
+                    </div>
+                
+                    <button class="slider_button slider_button-next">›</button>
+                </div>
+        
+            </div>
+        </div>
+    </section>
+
+<!-- Sección de Aliados Estratégicos - Grid de 4x4 máximo visible desktop / 2x2 mobile -->
+
+    <section id="aliados" class="container aliados_container scroll_section">
+        
+        <div class="aliados_layout" data-aos="fade-up">
+
+            <div class="aliados_title">
+                <h2>Aliados Estratégicos</h2>
+                <p class="aliados_subtitle">
+                    Empresas y profesionales con los que colaboramos para ofrecer soluciones integrales.
+                </p>
+            </div>
+
+            <div class="aliados_grid">
+                <div class="aliado_item">
+                    <div class="aliado_img">
+                        <img src="img/contribuciones/adidas-original-logo.png" alt="Adidas logo">
+                    </div>
+                    <div class="aliado_txt">
+                        <p>Adidas</p>
+                    </div>
+                </div>
+                <div class="aliado_item">
+                    <div class="aliado_img">
+                        <img src="img/contribuciones/heineken-logo.png" alt="Heineken logo">
+                    </div>
+                    <div class="aliado_txt">
+                        <p>Heineken</p>
+                    </div>
+                </div>
+                <div class="aliado_item">
+                    <div class="aliado_img">
+                        <img src="img/contribuciones/jordan-logo.png" alt="Jordan logo">
+                    </div>
+                    <div class="aliado_txt">
+                        <p>Jordan</p>
+                    </div>
+                </div>
+                <div class="aliado_item">
+                    <div class="aliado_img">
+                        <img src="img/contribuciones/louis vuitton-logo.png" alt="Louis Vuitton logo">
+                    </div>
+                    <div class="aliado_txt">
+                        <p>Louis Vuitton</p>
+                    </div>
+                </div>
+                <div class="aliado_item">
+                    <div class="aliado_img">
+                        <img src="img/contribuciones/puma-logo.png" alt="Puma logo">
+                    </div>
+                    <div class="aliado_txt">
+                        <p>Puma</p>
+                    </div>
+                </div>
+                <div class="aliado_item">
+                    <div class="aliado_img">
+                        <img src="img/contribuciones/swatch-eps-vector-logo.png" alt="Swatch Argentina logo">
+                    </div>
+                    <div class="aliado_txt">
+                        <p>Swatch Argentina</p>
+                    </div>
+                </div>
+                <div class="aliado_item">
+                    <div class="aliado_img">
+                        <img src="img/contribuciones/vans-logo.png" alt="Vans logo">
+                    </div>
+                    <div class="aliado_txt">
+                        <p>Vans</p>
+                    </div>
+                </div>
+                <div class="aliado_item">
+                    <div class="aliado_img">
+                        <img src="img/contribuciones/heineken-logo.png" alt="Heineken logo">
+                    </div>
+                    <div class="aliado_txt">
+                        <p>Heineken</p>
+                    </div>
+                </div>
+                <div class="aliado_item">
+                    <div class="aliado_img">
+                        <img src="img/contribuciones/puma-logo.png" alt="Puma logo">
+                    </div>
+                    <div class="aliado_txt">
+                        <p>Puma</p>
+                    </div>
+                </div>
+                <div class="aliado_item">
+                    <div class="aliado_img">
+                        <img src="img/contribuciones/swatch-eps-vector-logo.png" alt="Swatch Argentina logo">
+                    </div>
+                    <div class="aliado_txt">
+                        <p>Swatch Argentina</p>
+                    </div>
+                </div>
+                <div class="aliado_item">
+                    <div class="aliado_img">
+                        <img src="img/contribuciones/vans-logo.png" alt="Vans logo">
+                    </div>
+                    <div class="aliado_txt">
+                        <p>Vans</p>
+                    </div>
+                </div>
+                <div class="aliado_item">
+                    <div class="aliado_img">
+                        <img src="img/contribuciones/heineken-logo.png" alt="Heineken logo">
+                    </div>
+                    <div class="aliado_txt">
+                        <p>Heineken</p>
+                    </div>
+                </div>
+
 
             </div>
 
-            <button class="carousel_button carousel_button--next" aria-label="Tarjeta siguiente">
-                ›
-            </button>
-
-        </div>
-    </section>
-    
-<!-- Empresas en las que se involucró laboralmente -->
-    <section class="container contribuciones_container" data-aos="fade-right">
-        <div class="contribuciones_title">
-            <h2>Contribuciones</h2>
-        </div>
-        <div id="contribuciones_slider" class="slider">
-
-            <button class="slider_button slider_button-prev">‹</button>
-            
-            <div class="slider_viewport">
-
-                <div class="slider_container">
-                    <div class="slider_item">
-                        <div class="slider_img">
-                            <img src="img/timelines/swatch-eps-vector-logo.png" alt="slide 1">
-                        </div>
-                    </div>
-                    <div class="slider_item">
-                        <div class="slider_img">
-                            <img src="img/contribuciones/swarowski-logo-2.png" alt="slide 2">
-                        </div>
-                    </div>
-                    <div class="slider_item">
-                        <div class="slider_img">
-                            <img src="img/contribuciones/puma-logo.png" alt="slide 3">
-                        </div>
-                    </div>
-                    <div class="slider_item">
-                        <div class="slider_img">
-                            <img src="img/contribuciones/vans-logo.png" alt="slide 4">
-                        </div>
-                    </div>
-                    <div class="slider_item">
-                        <div class="slider_img">
-                            <img src="img/contribuciones/jordan-logo.png" alt="slide 5">
-                        </div>
-                    </div>
-                    <div class="slider_item">
-                        <div class="slider_img">
-                            <img src="img/contribuciones/louis vuitton-logo.png" alt="slide 6">
-                        </div>
-                    </div>
-                    <div class="slider_item">
-                        <div class="slider_img">
-                            <img src="img/contribuciones/heineken-logo.png" alt="slide 7">
-                        </div>
-                    </div>
+            <div class="aliados_cta">
+                <p>¿Querés ser aliado estratégico?</p>
+                <div class="cta_btn">
+                    <a href="#contacto">SUMATE</a>
                 </div>
-
             </div>
 
-            <button class="slider_button slider_button-next">›</button>
-        </div>
-        <div class="testimonios_cta cta_btn">
-            <a href="#contacto">Hablemos</a>
         </div>
     </section>
+
 
 <!-- Sección de contacto - Formulario y datos de contacto directo -->
-    <section id="contacto" class="container" data-aos="fade-up">
-        <div class="contacto_container contacto_grid">
+    <div class="scroll_section">
+    <section id="contacto" class="container" >
+        <div class="contacto_container contacto_grid" data-aos="fade-up">
             <div class="contacto_form">
                 <h2>Hablame de tu proyecto</h2>
                 <p>Completá el formulario y te responderé a la brevedad para coordinar una cita.</p>
                 <!-- Formulario con FORMSPREE -->
-                <form class="form_container"> 
-                    <input type="text" placeholder="Nombre y apellido (*)" required>
-                    <input type="text" placeholder="Empresa (*)" required>
-                    <input type="text" placeholder="Proyecto(*)" required>
-                    <input type="email" placeholder="Email (*)" required>
-                    <textarea name="mensaje" minlength="20" maxlength="500" placeholder="Contame brevemente sobre tu desafío (*)"></textarea>
+                <form class="form_container" aria-label="Formulario de contacto"> 
+                    <input type="text" name="nombre" placeholder="Nombre y apellido (*)" required>
+                    <input type="text" name="empresa" placeholder="Empresa (*)" required>
+                    <input type="text" name="proyecto" placeholder="Proyecto(*)" required>
+                    <input type="email" name="email" placeholder="Email (*)" required>
+                    <textarea name="mensaje" name="mensaje" minlength="20" maxlength="500" placeholder="Contame brevemente sobre tu desafío (*)"></textarea>
                     <div class="form_btn">
                         <button class="enviar_button" type="submit" aria-required="true">Enviar mensaje</button>
                     </div>
                 </form>
+                <div class="form_text">
+                    <p>Los datos enviados se utilizan únicamente para responder a la consulta.</p>
+                </div>
             </div>
 
             <div class="ubicacion">
                 <h2>Ubicación</h2>
                 <div class="mapa_container">
-                    <iframe src="https://www.google.com/maps/embed?pb=!4v1765466372353!6m8!1m7!1shnu8yKfn-KKHofXQEdciqQ!2m2!1d-35.05359533678261!2d-58.76309436539059!3f80.93741780231174!4f4.278223350714086!5f0.7820865974627469" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    <img src="img/mapa.png" alt="Mapa de ubicación">
                 </div>
             </div>
 
             <div class="contacto_directo">
                 <h2>Datos de contacto</h2>
                 <div class="contacto_directo_links">
-                    <p>Email: <span>contacto-cami@asd.com</span></p>
+                    <p>Email: <span>oyharzabalcamila@gmail.com</span></p>
                     <p>LinkedIn: <span>Camila Oyharzábal</span></p>
-                    <p>Teléfono: <span>0123 456 789</span></p>
-                    <p>Dirección: <span>Lara n° 942, Cañuelas, Buenos Aires</span></p>
+                    <p>Teléfono: <span>11 3856-2016</span></p>
+                    <p>Dirección: <span>Olivos, CABA, Buenos Aires</span></p>
                 </div>
                 
                 <div class="contacto_sm">
                     <!-- Ícono LinkedIn -->
-                    <a href="https://www.linkedin.com/in/camila-oyharz%C3%A1bal-95178ab8/" target="_blank">
+                    <a href="https://www.linkedin.com/in/camila-oyharz%C3%A1bal-95178ab8/" target="_blank" alt="LinkedIn Camila Oyharzábal">
                         <div class="icon"><svg><use href="assets/sprite-base.svg#icon-linkedin"></use></svg></div>
                     </a>
                     <!-- Ícono Instagram -->
-                    <a href="https://www.instagram.com/camila_oyharzabal/" target="_blank">
+                    <a href="https://www.instagram.com/camila_oyharzabal/" target="_blank" alt="Instagram Camila Oyharzábal">
                         <div class="icon"><svg><use href="assets/sprite-base.svg#icon-instagram"></use></svg></div>
                     </a>    
                     <!-- Ícono WhatsApp -->
-                    <a href="#">
+                    <a href="#" alt="WhatsApp Camila Oyharzábal">
                         <div class="icon"><svg><use href="assets/sprite-base.svg#icon-whatsapp"></use></svg></div>
                     </a>
                     <!-- Ícono Email -->
-                    <a href="#">
+                    <a href="#" alt="Email Camila Oyharzábal">
                         <div class="icon"><svg><use href="assets/sprite-base.svg#icon-mail-blanco"></use></svg></div>
                     </a>        
                 </div>
@@ -605,13 +753,16 @@
     <footer class="footer">
         <div class="footer_container">
             <div class="copy">
-                <p>&copy 2025 CEO <br> Consultoría Empresarial</p>
+                <p>&copy; 2025 CEO - Consultoría Empresarial <br>Todos los derechos reservados.</p>
             </div>
             <div class="creador">
                 <p>Diseño y desarrollo:<br><a href="#">JBO-dev</a></p>
             </div>
         </div>
     </footer>
+    </div>
+</div>
+    <!-- Scripts -->    
     <script src="js/general.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="js/scroll-paginas.js"></script>

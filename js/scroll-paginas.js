@@ -6,7 +6,7 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
 
         const target = document.querySelector(targetID);
         if (!target) return;
-
+    //  CAMBIAR VELOCIDAD DE SCROLL
         smoothScroll(target.offsetTop, 1800); 
     });
 });

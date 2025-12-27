@@ -1,9 +1,15 @@
-.aside_container{
+.aside_container {
+    background-image: url(../img/fondo-oficina.webp);
+    background-size:cover;
+    background-position: top;
+    background-repeat:no-repeat;
+    min-height: 100vh;
+    width: 100vw;
+    padding: 5rem 0 0 0;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-
 }
 
 .timeline_card {
@@ -54,7 +60,7 @@
     max-height: 0;
     opacity: 0;
     overflow: hidden;
-    transition: 1s ease;
+    /* transition: 1s ease; */
 }
 
 /* Cuando está activo, se muestra */
@@ -338,7 +344,7 @@
     }
 
     .timeline_container.visible {
-        opacity: 0;
+        opacity: 1;
         transform: translateY(0);
     }
 

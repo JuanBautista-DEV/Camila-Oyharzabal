@@ -1,0 +1,143 @@
+#aliados {
+    min-height: 100vh !important;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.aliados_layout {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    gap: clamp(2rem, 4vh, 4rem);
+
+    padding: clamp(3rem, 6vh, 6rem) 1rem;
+    padding-top: 1rem;
+    text-align: center;
+}
+
+.aliados_title h2 {
+    font-size: clamp(1.4rem, 2.2vw, 2rem);
+    text-align: center;
+    margin: 0 ;
+    color: var(--rojo-primario);
+    padding: 40px 0 0 0;
+}
+.aliados_subtitle {
+    text-align: center;
+    margin: 10px 0 0 0;
+    font-family: "montserrat";
+    font-weight: 300;
+    font-size: clamp(0.95rem, 1.1vw, 1.1rem);
+    line-height: 1.6;
+    color: #555555;
+}
+
+.aliados_grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: clamp(1.5rem, 2vw, 2.5rem);
+    align-items: center;
+}
+
+.aliado_item {
+    border: 1px solid #d7d7d7;
+    border-radius: 12px;
+    padding: 0rem 2.5rem .5rem;
+    text-decoration: none;
+    color: #555555;
+    transition: transform .25s ease, box-shadow .25s ease;
+    background: #fff;
+}
+
+.aliado_item img {
+    max-width: clamp(100px, 100px, 150px);
+    height: auto;
+    margin-bottom: 1rem;
+    object-fit: contain;
+}
+.aliado_txt {
+    text-align: center;
+    margin-top: -30px;
+    font-family: "montserrat";
+    font-weight: 500;
+    font-size: .9rem;
+    color: #555555;
+}
+.aliado_item:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.aliados_scroll-hint {
+    display: none;
+}
+
+.aliados_cta {
+    text-align: center;
+    margin-top: 0;
+    font-family: "montserrat";
+    font-weight: 500;
+    font-size: 20px;
+    color: #555555;
+}
+
+.aliados_container .cta_btn {
+    margin-top: clamp(1rem, 2vh, 2rem);
+}
+
+@media (max-width: 768px) {
+    #aliados {
+        min-height: auto;
+    }
+
+    .aliados_layout {
+        grid-template-rows: auto auto auto;
+        gap: 2.5rem;
+        padding: 4rem 1.5rem;
+    }
+
+    .aliados_grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+        grid-auto-flow: column;
+        gap: 1.25rem;
+        overflow-x: auto;
+        scroll-snap-type: x mandatory;
+        -webkit-overflow-scrolling: touch;
+        overflow-y: hidden;
+    }
+
+    .aliado_item {
+        flex: 0 0 80%;
+        scroll-snap-align: center;
+        width: 120px;
+        height: 120px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .aliado_item img {
+        width: 70px;
+        height: 70px;
+    }
+
+    .aliados_scroll-hint {
+        display: block;
+        position: absolute;
+        right: 1rem;
+        bottom: 1.5rem;
+        font-size: 1.5rem;
+        color: rgba(0,0,0,.35);
+        pointer-events: none;
+        transition: opacity .3s ease;
+    }
+
+}

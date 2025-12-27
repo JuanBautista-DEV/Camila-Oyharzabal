@@ -1,20 +1,31 @@
 :root {
     /* Variables para facilitar la gestión de tamaños y espaciado */
-    --card-gap: 1px;
+    --contribuciones-card-gap: 1px;
     --card-width-desktop: calc((100% - (2 * var(--card-gap))) / 4); /* Para 3 tarjetas */
     --card-width-mobile: 100%; /* Para 1 tarjeta */
     --transition-duration: 0.5s;
     --base-card-height: 250px; /* Alto base para las tarjetas */
 }
 
-.contribuciones_container {
-    width: 90%;
-    height: 40vh;
+.contribuciones {
+    min-height: auto;
+    align-items: center;
 }
 
 .contribuciones_title h2 {
     text-align: center;
     color: var(--rojo-primario);
+    /* padding-bottom: clamp(1rem, 2.2vw, 2rem); */
+}
+
+.contribuciones_subtitle {
+    text-align: center;
+    margin: 10px 0 0 0;
+    font-family: "montserrat";
+    font-weight: 300;
+    font-size: clamp(0.95rem, 1.1vw, 1.1rem);
+    line-height: 1.6;
+    color: #555555;
 }
 /* 1. Estilos del Carrusel Principal (Bloque) */
 .slider {
@@ -85,6 +96,7 @@
 
 .slider_button  {
     font-size: 30px;
+    display: none;
 }
 
 .slider_button-prev {
@@ -113,7 +125,7 @@
     /* Ajuste del margen para el contenedor en mobile. El margen real lo maneja JS */
     .slider_container {
         /* Se usa para asegurar que la vista sea fluida */
-        margin-right: var(--card-gap); 
+        margin-right: var(--contribuciones-card-gap); 
     }
 }
 

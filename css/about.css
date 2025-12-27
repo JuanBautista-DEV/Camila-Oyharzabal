@@ -1,8 +1,8 @@
 #sobremi {
     margin-top: calc(-4rem - (-4px));
-    background-image: url(../img/fondo-about-2.png);
+    background-image: url(../img/fondo-about.webp);
     background-size:cover;
-    background-position: center;
+    background-position: top;
     background-repeat:no-repeat;
     min-height: 100vh;
     width: 100vw;
@@ -15,8 +15,8 @@
     display: grid;
     grid-template-columns: 30% 1fr;
     grid-template-areas: 
-        "about timelines"
-        "about timelines";
+        "titulo texto"
+        "titulo texto";
     width: 100%;
     height: 100%;
     justify-content: center;
@@ -25,11 +25,11 @@
 }
 
 .about_container {
-    grid-area: about;
+    grid-area: titulo;
 }
 
-.aside_container {
-    grid-area: timelines;
+aside {
+    grid-area: texto;
 }
 
 .about_container {
@@ -42,10 +42,16 @@
     overflow: hidden;
 }
 
+.about_text {
+    justify-content: left;
+    width: 100%;
+    margin-left: 10%;
+}
+
 .about_text p {
     font-family: "montserrat";
     font-weight: 200;
-    font-size: 60px;
+    font-size: clamp(42px, 8vw, 60px);
     padding: 10px;
     color: #fff;
 }
@@ -64,15 +70,72 @@
     transition: all .3s ease-in-out;
 }
 
+aside {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 100%;
+    width: 100%;
+}
+
+aside .about_description {
+    max-width: 40%;
+    margin: 0 auto;
+}
+
+.about_description p {
+    font-family: "fira sans", sans-serif;
+    font-weight: 300;
+    font-size: 26px;
+    color: #fff;
+    margin-bottom: 15px;
+    line-height: 1.6;
+}
+
+
+
 @media screen and (max-width: 768px) {
     .about_grid {
-        grid-template-areas: 
-        "timelines timelines"
-        "timelines timelines"
-        ;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+        gap: 40px;
     }
 
     .about_container {
+        height: max-content;
+    }
+
+    .about_text {
+        display: flex;
+        justify-content: right;
+        width: 100%;
+        margin-right: 30%;
+    }
+
+    .about_text p {
+        justify-content: right;
+    }
+    
+    aside .about_description {
+        max-width: 100%;
+        margin: 0 auto;
+    }
+
+    .about_description p {
+        padding: 10px;
+        font-family: "fira sans", sans-serif;
+        font-weight: 300;
+        font-size: 24px;
+        color: #fff;
+        margin-bottom: 15px;
+        line-height: 1.6;
+    }
+
+    .about_links {
         display: none;
     }
 

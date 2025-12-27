@@ -116,7 +116,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // 2. Ajuste de Anchos y Responsividad 
     const setCardWidths = () => {
-        const gap = parseFloat(getComputedStyle(sliderElement).getPropertyValue('--card-gap'));
+        const gap = parseFloat(getComputedStyle(sliderElement).getPropertyValue('--contribuciones-card-gap'));
         const viewport = sliderElement.querySelector('.slider_viewport');
         let cardWidth;
         
@@ -145,7 +145,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const updateSliderPosition = (animated = true) => {
         // Obtenemos el ancho del primer ítem (incluye padding y borde)
         const itemWidth = items[0].getBoundingClientRect().width;
-        const gap = parseFloat(getComputedStyle(sliderElement).getPropertyValue('--card-gap'));
+        const gap = parseFloat(getComputedStyle(sliderElement).getPropertyValue('--contribuciones-card-gap'));
         
         // CORRECCIÓN: El cálculo de translateX DEBE ser itemWidth + gap (si aplica)
         const translateX = -currentIndex * (itemWidth + (visibleCards === 4 ? gap : 0));

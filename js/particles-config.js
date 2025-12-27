@@ -41,7 +41,7 @@
             resize: true
           },
           modes: {
-            repulse: { distance: 200, duration: 0.4 },
+            repulse: { distance: 100, duration: 0.4 },
             push: { quantity: 10 }
           }
         },

@@ -27,19 +27,16 @@ body {
 }
 
 h1 {
-    color: var(--color-titulos);
+    color: var(--rojo-primario);
 }
 
 h2 {
-    color: var(--color-subtitulos);
+    color: var(--rojo-primario);
     font-family: "roboto";
     font-weight: 200;
-    font-size: 26px;
+    /* font-size: 26px; */
+    font-size: clamp(1.4rem, 2.2vw, 2rem);
     text-transform: uppercase;
-}
-
-h3 {
-    color: var(--color-subtitulos-2);
 }
 
 li {
@@ -66,16 +63,51 @@ a {
 }
 
 .cta_btn a {
-    color: var(--color-angular);
-    border: 1px solid var(--color-angular);
+    color: var(--rojo-primario);
+    border: 1px solid var(--rojo-primario);
     border-radius: 12px;
     padding: 10px 20px;
-    font-size: 18px;
+    font-size: clamp(1rem, 1.1vw, 2.5rem);
     transition: all .3s ease-in-out;
 }
 
 .cta_btn a:hover {
-    background-color: var(--color-angular);
+    background-color: var(--rojo-primario);
     color: #ffffff;
 }
 
+
+/* ===== SCROLL SALTANDO DE A 100vh - Cambio de página completo por sección ===== */
+html {
+    scroll-snap-type: y mandatory;
+    scroll-behavior: smooth;
+}
+
+.scroll_section {
+    scroll-snap-align: start;
+}
+
+
+
+
+/* ===== SCROLL POR SECCIONES A PARTIR DE 1024px (notebooks, escritorio) ===== */
+
+/* .scroll_container {
+  scroll-snap-type: none;
+} */
+
+/* Desktop / notebook en adelante */
+
+/* @media (min-width: 1024px) {
+  .scroll_container {
+    scroll-snap-type: y proximity;
+  }
+
+  .scroll_section {
+    scroll-snap-align: start;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+} */

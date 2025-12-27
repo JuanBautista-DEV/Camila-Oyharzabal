@@ -1,3 +1,11 @@
+function applyClampByViewport(p) {
+  const baseLines = parseInt(p.dataset.lines || 3, 10);
+  const isMobile = window.matchMedia("(max-width: 768px)").matches;
+  const lines = isMobile ? baseLines * 2 : baseLines;
+
+  p.style.setProperty("--lines", lines);
+}
+
 // script.js (Corregido)
 document.addEventListener('DOMContentLoaded', () => {
     const carouselElement = document.getElementById('circular-carousel');
@@ -15,7 +23,7 @@ document.addEventListener('DOMContentLoaded', () => {
     let isManualMove = false; // Nueva variable para controlar movimientos manuales
     
     // --- Configuración Responsiva ---
-    const getVisibleCards = () => window.innerWidth > 768 ? 3 : 1;
+    const getVisibleCards = () => window.innerWidth > 1200 ? 3 : 1;
     let visibleCards = getVisibleCards();
 
     // 1. Inicialización del Carrusel y Clonación (Sin cambios)
@@ -80,13 +88,13 @@ document.addEventListener('DOMContentLoaded', () => {
 
                 // 1. Eliminar la clase de expansión
                 p.classList.remove("expanded");
-                
-                // 2. Aplicar estilos de vuelta al estado clamped (cerrado)
+                            
+                // 2. Volver a estado cerrado respetando viewport
                 p.style.display = "-webkit-box";
-                p.style.webkitLineClamp = lines;
-                
+                applyClampByViewport(p);
+                            
                 // 3. Resetear el texto del botón
-                btn.textContent = "Ver más"; 
+                btn.textContent = "Ver más";
             }
         }
     });
@@ -229,7 +237,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 // Al mover automáticamente, no pasa por moveTo para evitar la pausa/reanudación
                 currentIndex++;
                 updateCarouselPosition();
-            }, 3000); // 3 segundos
+            }, 5000); // 5 segundos
         }
     };
 
@@ -308,36 +316,10 @@ document.addEventListener('DOMContentLoaded', () => {
     // Ejecutar la inicialización
     initializeCarousel();
     updateActiveState();
+
+    window.addEventListener("resize", () => {
+        document.querySelectorAll(".clampado").forEach(applyClampByViewport);
+    });
+
 });
 
-
-// === TEXT CLAMP ===
-//  document.querySelectorAll(".texto-clamp").forEach(box => {
-//      const p = box.querySelector(".clampado");
-//      const btn = box.querySelector(".btn-vermas");
-//      const lines = p ? (p.dataset.lines || 3) : 3;
-//  
-//      if (!p || !btn) return;
-//  
-//      // Estado inicial
-//      p.style.display = "-webkit-box";
-//      p.style.webkitLineClamp = lines;
-//      p.classList.remove("expanded");
-//      btn.textContent = "Ver más";
-//  
-//      btn.addEventListener("click", () => {
-//          const isExpanded = p.classList.toggle("expanded");
-//  
-//          if (isExpanded) {
-//              // Mostrar todo
-//              p.style.webkitLineClamp = "unset";
-//              p.style.display = "block";
-//              btn.textContent = "Ver menos";
-//          } else {
-//              // Volver a clamped
-//              p.style.display = "-webkit-box";
-//              p.style.webkitLineClamp = lines;
-//              btn.textContent = "Ver más";
-//          }
-//      });
-//  });

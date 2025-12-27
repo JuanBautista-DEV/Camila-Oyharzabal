@@ -6,6 +6,7 @@
 #contacto {
     padding: 5rem 0 0 0;
     height: 90vh;
+    margin: 0 auto;
 }
 
 .contacto_grid {
@@ -127,6 +128,12 @@
     color: #e12a2a;
 }
 
+.form_text {
+    width: calc(80% + 20px);
+    margin-top: 10px;
+    font-size: 14px;
+    color: #fff;
+}
 /* =========================
    MAPA
 ========================= */
@@ -137,7 +144,7 @@
     height: 100%;
 }
 
-.ubicacion iframe {
+.ubicacion img {
     width: 100%;
     height: 80%;
     border-radius: 8px;
@@ -236,6 +243,11 @@
 
     .form_btn {
         width: 100%;
+    }
+
+    .form_text {
+        width: 100%;
+        font-size: 13px;
     }
 
     /* ---------- MAPA ---------- */
